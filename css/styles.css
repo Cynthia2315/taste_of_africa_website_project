@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff8ed;
+    color: #3b2a1a;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+    font-family: playfair display, serif;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #9b2226;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    height: 70vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ),
+    url("../images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.hero h2 {
+
+    font-size: 3rem;
+
+}
+
+
+.hero a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background: #d9a441;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+}
+
+
+
+/* Sections */
+
+section {
+
+    padding: 50px 8%;
+
+}
+
+
+section h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* Cards */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+figure {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+
+figure img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+
+
+figcaption {
+
+    padding: 20px;
+
+}
+
+
+
+/* Links */
+
+a {
+
+    color: #9b2226;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    background: #6b4226;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+
+    nav ul {
+
+        flex-direction: column;
+
+        margin-top:20px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero h2 {
+
+        font-size:2rem;
+
+    }
+
+}
